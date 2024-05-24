@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Date Time Formatter",
+  "description": "Shows relative date-time in the column.\nNote: you need to click \"Select columns to display\" and then -> \"Relative Date/Time\"",
+  "version": "1.0",
+  "author": "Aman Rathore",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "todo@todo.todo",
+      "strict_min_version": "115.10.0",
+      "strict_max_version": "127.*"
+    }
+  },
+  "background": {
+    "scripts": [
+      "src/backend/addition_of_custom_column.js"
+    ]
+  },
+  "icons": {
+    "48": "assets/images/icons/clock_settings.png"
+  },
+  "experiment_apis": {
+    "customColumns": {
+      "schema": "schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "customColumns"
+          ]
+        ],
+        "script": "src/backend/custom_column.js"
+      }
+    }
+  }
+}

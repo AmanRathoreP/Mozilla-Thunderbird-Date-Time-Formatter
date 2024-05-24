@@ -1,0 +1,1 @@
+browser.customColumns.add("relative_date_time", "Relative Date/Time", "addon_provided_relative_date_time");
