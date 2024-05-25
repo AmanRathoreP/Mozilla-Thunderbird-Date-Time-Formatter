@@ -29,7 +29,7 @@ We welcome any type of contribution, _not only code_. You can help with:
 - **Code**: Take a look at the [open issues](issues.md). Even if you can't write the code yourself, you can comment on them, showing that you care about a given issue matters. It helps us to handel them
 
 # Demo
-...
+![Relative Date/Time Column](https://github.com/AmanRathoreP/AmanRathoreP/blob/main/imgs/relative%20date%20time%20formatter%20of%20Mozila%20Thunderbird-demo%20ss.jpg)
 
 # Author
 
