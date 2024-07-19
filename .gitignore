@@ -22,4 +22,6 @@
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
 
-.bin/*
+bin/*
+# to store older versions' zip
+older-versions/
