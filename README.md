@@ -10,7 +10,7 @@
 # Features
 
 * Set Relative Date/Time
-* ...
+* Experimental sorting feature available
 <!-- * Set Custom Date/Time format -->
 
 # Quick start

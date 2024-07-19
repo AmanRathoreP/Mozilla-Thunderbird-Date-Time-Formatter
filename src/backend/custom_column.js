@@ -3,7 +3,7 @@ var { ExtensionSupport } = ChromeUtils.import("resource:///modules/ExtensionSupp
 const { ThreadPaneColumns } = ChromeUtils.importESModule("chrome://messenger/content/thread-pane-columns.mjs");
 
 const ids = [];
-
+var row_num = 0;
 // in milliseconds
 var units = {
   year: 24 * 60 * 60 * 1000 * 365,
@@ -36,19 +36,32 @@ var customColumns = class extends ExtensionCommon.ExtensionAPI {
             return get_relative_date_time(new Date(message.date / 1000));
           }
 
+          function get_row_number_of_addon_provided_relative_date_time(
+              message
+          ) {
+              // nano seconds to milliseconds
+              row_num += 1;
+              return row_num;
+          }
+
           function getEmpty(message) {
             return "";
           }
 
           var callback = field == "addon_provided_relative_date_time" ? get_addon_provided_relative_date_time : getEmpty;
+          var sort_callback =
+              field == "addon_provided_relative_date_time"
+                  ? get_row_number_of_addon_provided_relative_date_time
+                  : getEmpty;
 
           ThreadPaneColumns.addCustomColumn(id, {
-            name: name,
-            hidden: false,
-            icon: false,
-            resizable: true,
-            sortable: false,
-            textCallback: callback
+              name: name,
+              hidden: false,
+              icon: false,
+              resizable: true,
+              sortable: true,
+              textCallback: callback,
+              sortCallback: sort_callback,
           });
         },
 
