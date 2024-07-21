@@ -42,23 +42,14 @@ var customColumns = class extends ExtensionCommon.ExtensionAPI {
             return get_relative_date_time(new Date(message.date / 1000));
           }
 
-          function get_row_number_of_addon_provided_relative_date_time(
-              message
-          ) {
-              // nano seconds to milliseconds
-              row_num += 1;
-              return row_num;
-          }
-
           function getEmpty(message) {
             return "";
           }
 
           var callback = field == "addon_provided_relative_date_time" ? get_addon_provided_relative_date_time : getEmpty;
-          var sort_callback =
-              field == "addon_provided_relative_date_time"
-                  ? get_row_number_of_addon_provided_relative_date_time
-                  : getEmpty;
+          var sort_callback = message => {
+            return field == "addon_provided_relative_date_time" ? Math.floor(message.date / 1000000) : 0;
+          };
 
           ThreadPaneColumns.addCustomColumn(id, {
               name: name,
