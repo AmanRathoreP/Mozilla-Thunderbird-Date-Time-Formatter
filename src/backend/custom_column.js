@@ -1,6 +1,12 @@
 var { ExtensionCommon } = ChromeUtils.import("resource://gre/modules/ExtensionCommon.jsm");
 var { ExtensionSupport } = ChromeUtils.import("resource:///modules/ExtensionSupport.jsm");
-const { ThreadPaneColumns } = ChromeUtils.importESModule("chrome://messenger/content/thread-pane-columns.mjs");
+
+let ThreadPaneColumns;
+try {
+    ThreadPaneColumns = ChromeUtils.importESModule("chrome://messenger/content/thread-pane-columns.mjs").ThreadPaneColumns;
+} catch (e) {
+    ThreadPaneColumns = ChromeUtils.importESModule("chrome://messenger/content/ThreadPaneColumns.mjs").ThreadPaneColumns; // renamed in TB128
+}
 
 const ids = [];
 var row_num = 0;
