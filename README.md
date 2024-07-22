@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Date Time Formatter</h1>
+  <h1>Date Time Formatter - v1.1.1</h1>
 </div>
 
 <p align="center">
@@ -10,12 +10,12 @@
 # Features
 
 * Set Relative Date/Time
-* Experimental sorting feature available
+* Sorting feature
 <!-- * Set Custom Date/Time format -->
 
 # Quick start
 
-...
+You can download the add-on from [Thunderbird's official site](https://addons.thunderbird.net/addon/date-time-formatter/).
 
 # Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](issues.md)
 
