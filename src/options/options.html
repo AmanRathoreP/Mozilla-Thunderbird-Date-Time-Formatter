@@ -1,0 +1,47 @@
+<!DOCTYPE overlay SYSTEM "chrome://checkbox/locale/checkbox.dtd">
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+
+<body>
+
+    <section class="option">
+        <div class="title-option">
+            <label class="label-checkbox">
+                <input class="input-checkbox" type="checkbox" id="display_hrs_with_mins">
+                <span class="text-label">Display minutes</span>
+            </label>
+        </div>
+        <div class="description-option">Displays hours with minutes when email is less than 1 day old.<br>For example <b>11 hours 47 mins</b> instead of <b>12 hours</b>.
+    </section>
+
+    <section class="option">
+        <div class="title-option">
+            <label class="label-checkbox">
+                <input class="input-checkbox" type="checkbox" id="display_days_with_hrs">
+                <span class="text-label">Display hours</span>
+            </label>
+        </div>
+        <div class="description-option">Displays days with hours when email is less than 1 month old.<br>For example <b>16 days 11 hours</b> instead of <b>16 days</b>.
+    </section>
+
+    <section class="option">
+        <div class="title-option">
+            <label class="label-checkbox">
+                <input class="input-checkbox" type="checkbox" id="display_months_with_days">
+                <span class="text-label">Display days</span>
+            </label>
+        </div>
+        <div class="description-option">Displays months with days when email is less than 1 year old.<br>For example <b>1 month 13 days</b> instead of <b>1 month</b>.
+    </section>
+
+    <script src="options.js"></script>
+
+</body>
+
+</html>

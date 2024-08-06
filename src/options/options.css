@@ -1,0 +1,50 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #e9ecef;
+}
+
+.option {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.option:hover {
+  box-shadow: 0 8px 16px rgba(172, 113, 113, 0.1);
+}
+
+.title-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input-checkbox {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  accent-color: #007bff;
+  cursor: pointer;
+}
+
+.text-label {
+  font-size: 1.2em;
+  color: #343a40;
+}
+
+.description-option {
+  color: #6c757d;
+  font-size: 1.1em;
+}
