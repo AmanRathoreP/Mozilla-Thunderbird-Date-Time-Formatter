@@ -19,13 +19,13 @@ You can download the add-on from [Thunderbird's official site](https://addons.th
 
 # Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](issues.md)
 
-Thank you for considering contributing to Computer Based Test Emulator
+Thank you for considering contributing to TB's Date Time Formatter Add-On
 
 First note we have a code of conduct, please follow it in all your interactions with the program files.
 
 We welcome any type of contribution, _not only code_. You can help with:
 - **QA**: File bug reports, the more details you can give the better (e.g. images or videos)
-- **New Features**: You can suggest an modifications or just ask for advancements in the old features of Application.
+- **New Features**: You can suggest an modifications or just ask for advancements in the old features of Add-On.
 - **Code**: Take a look at the [open issues](issues.md). Even if you can't write the code yourself, you can comment on them, showing that you care about a given issue matters. It helps us to handel them
 
 # Demo
