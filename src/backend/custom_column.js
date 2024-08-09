@@ -34,7 +34,7 @@ var customColumns = class extends ExtensionCommon.ExtensionAPI {
     context.callOnClose(this);
     return {
       customColumns: {
-        async add(id, name, field) {
+        async add(id, name, field, __date_time_formatter_preferences) {
           ids.push(id);
 
           function get_addon_provided_relative_date_time(message) {

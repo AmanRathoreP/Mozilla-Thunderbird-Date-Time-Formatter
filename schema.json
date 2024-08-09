@@ -18,6 +18,21 @@
           {
             "type": "string",
             "name": "field"
+          },
+          {
+            "name": "__date_time_formatter_preferences",
+            "type": "object",
+            "properties": {
+              "display_hrs_with_mins": {
+                "type": "boolean"
+              },
+              "display_days_with_hrs": {
+                "type": "boolean"
+              },
+              "display_months_with_days": {
+                "type": "boolean"
+              }
+            }
           }
         ]
       }
