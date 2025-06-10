@@ -2,13 +2,13 @@
   "manifest_version": 2,
   "name": "Date Time Formatter",
   "description": "Shows relative date-time in the column.\nNote: you need to click \"Select columns to display\" and then -> \"Relative Date/Time\"",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Aman Rathore",
   "browser_specific_settings": {
     "gecko": {
       "id": "aman.proj.rel@gmail.com",
-      "strict_min_version": "136*",
-      "strict_max_version": "*"
+      "strict_min_version": "115.10.0",
+      "strict_max_version": "141.*"
     }
   },
   "background": {

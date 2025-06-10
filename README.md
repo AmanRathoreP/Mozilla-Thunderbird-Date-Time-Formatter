@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Date Time Formatter - v2.0.0</h1>
+  <h1>Date Time Formatter - v2.0.1</h1>
 </div>
 
 <p align="center">
