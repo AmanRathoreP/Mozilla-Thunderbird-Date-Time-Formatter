@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Date Time Formatter - v1.1.1</h1>
+  <h1>Date Time Formatter - v2.0.0</h1>
 </div>
 
 <p align="center">
@@ -49,7 +49,7 @@ We welcome any type of contribution, _not only code_. You can help with:
 
 [MIT License](https://choosealicense.com/licenses/mit/) | [LICENSE](LICENSE/)
 
-Copyright (c) 2024, Aman Rathore
+Copyright (c) 2025, Aman Rathore
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
