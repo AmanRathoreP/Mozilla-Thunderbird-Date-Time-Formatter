@@ -35,20 +35,11 @@ function check_old_stored_settings(old_stored_settings) {
         // Load the stored preferences into the current object.
         date_time_formatter_preferences = old_stored_settings.date_time_formatter_preferences;
     }
+    
+    browser.customColumns.add("relative_date_time", "Relative Date/Time", "addon_provided_relative_date_time", date_time_formatter_preferences);
+    
 }
 
 // Retrieve any existing settings from local storage and pass them to the check_old_stored_settings function.
 // If an error occurs during the retrieval process, it will be logged to the console.
 browser.storage.local.get().then(check_old_stored_settings, console.error);
-
-/**
- * Adds a custom column to the Thunderbird UI for displaying relative date and time information.
- * The new column will use the settings specified in the date_time_formatter_preferences object.
- *
- * @param {string} id - The identifier for the custom column.
- * @param {string} title - The display name for the column in the UI.
- * @param {string} provider - The function or data source that provides the relative date/time values.
- * @param {DateTimeFormatterPreferences} options - The user preferences that determine the format of the date/time display.
- */
-
-browser.customColumns.add("relative_date_time", "Relative Date/Time", "addon_provided_relative_date_time", date_time_formatter_preferences);

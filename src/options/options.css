@@ -48,3 +48,13 @@ body {
   color: #6c757d;
   font-size: 1.1em;
 }
+
+.warning {
+  border-left: 4px solid #ffcc00;
+  background-color: #fffaeb;
+}
+
+.warning .description-option {
+  color: #856404;
+  font-weight: 500;
+}
