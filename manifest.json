@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Date Time Formatter",
   "description": "Shows relative date-time in the column.\nNote: you need to click \"Select columns to display\" and then -> \"Relative Date/Time\"",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "author": "Aman Rathore",
   "browser_specific_settings": {
     "gecko": {
